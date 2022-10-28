@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-6/fonts/all.min.css">
+    <link rel="stylesheet" href="./regstyle.css">
+    <title>Registration page</title>
+</head>
+
+<body>
+  <header>
+    <div class="home">  
+      <a href="in dex.html">login</a>                 
+    </div>
+  </header>
+
+  <main class="container">  
+    <form id="contact" action="" method="post">
+      <h3>REGISTER</h3>
+      <h4>Contact us for custom quote</h4>
+      <fieldset>
+        <input type="text" class="form-control" id="firstname" placeholder="firstname" name="firstname" value="" tabindex="1" required>
+      </fieldset>
+      <fieldset>
+        <input type="text" class="form-control" id="lastname" placeholder="lastname" name="lastname" value="" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input type="tel" class="form-control" id="phone" placeholder="phone" name="phone" value="" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="email" type="email" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <label for="cars">Choose a gender:</label>
+        <select name="gender" id="gender" tabindex="5" required>
+        <option value="">None</option>
+        <option value="volvo">Male</option>
+        <option value="saab">Female</option>
+      </fieldset>
+      <br>
+      <fieldset>
+        <label for="cars">date of birth:</label>
+        <input type="date" class="form-control" id="dob" name="date" value="" tabindex="6" required>
+      </fieldset>
+      <fieldset>
+        <p>select your favourite colour</p>
+        <input type="color" class="form-control" id="colour" placeholder="colour" name="colour" value="" tabindex="7" required>
+      </fieldset>
+      <fieldset>
+        <a href="suc-reg.html" target="_blank">
+          <button name="submit" id="contact-submit" type="button" data-submit="...sending" value="SEND">
+            <div class="alt-send-button"><i class="fa fa-paper-plane"></i> <span class="send-text">submit</span></div>            
+          </button>
+        </a>
+      </fieldset>
+    </form>
+  </main>
+
+      <div class="contact-container">
+      
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa"><span class="contact-text place">Lekki, Lagos</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa"><span class="contact-text phone"><a href="tel:+2349033148215" title="Give me a call">(+234) 903-314-8215</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">edges.net@gmail.com</a></span></i></li>
+        </ul>
+
+        <footer>
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      <p class="copyright">developed by <a href="#" target="_blank" title="damilare-web">Damilare-web</a></p>
+        </footer>
+    </form>
+  </div>     
+</body>
+</html>

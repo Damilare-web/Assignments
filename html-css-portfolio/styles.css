@@ -1,0 +1,305 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+header{
+   background-color: #000;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+header .home {
+   position: absolute;
+   right: 5%;
+   height: auto;
+}
+     
+header nav .left a{
+   font-weight: 100;
+   color:  whitesmoke;
+   text-decoration: none;
+   margin-right: 2rem;
+   text-transform: uppercase;
+   transition: all .2s ease;
+}
+header nav .left a:hover{
+   color: #4CAF50;
+}
+header nav {
+   padding: 1rem 0;
+   padding-bottom: 10px;
+}
+header nav .logo{
+   margin-right: 3rem;
+}
+
+body{
+   font-family: 'Poppins', sans-serif;
+}
+.container{
+   max-width: 1152px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+     
+.flex{
+   display: flex;
+}
+.items-centre{
+   align-items: center;
+}
+.justify-between{
+   justify-content: space-between;
+}
+.justify-center{
+   justify-content: center;
+}
+.justify-right{
+   justify-content: right;
+}
+.btn{
+   padding: 0.6rem 2rem;
+   font-size: 1rem;
+   font-weight: 600;
+   border: 2px solid transparent;
+   outline: none;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: all .2s ease;
+}
+.btn-primary{
+   background-color: #4CAF50;
+   color: #fff;
+   margin-top: -15rem;
+}
+.btn-primary:hover{
+   background: transparent;
+   border-color: #4CAF50;
+   color: #4CAF50;
+}
+.flex-1{
+   flex: 1;
+}
+.btn-secondary{
+   background: transparent;
+   color: #4CAF50;
+   border-color: #4CAF50;
+}
+.btn-secondary:hover{
+   background: #4CAF50;
+   color: #000;
+}
+            
+.contact-links {
+   padding-top: 40px;
+   display: flex;
+   flex-direction: row;                 
+}
+             
+a {
+   text-decoration: none;
+   color: #4CAF50;
+   font-size: large;
+   font-weight: 300;
+   margin: 40px;
+}  
+a :hover{
+   background: transparent;
+   border-color: #4CAF50;
+   color: #000;
+}          
+            
+section{
+   padding: 6rem;
+}
+section.about h1{
+   margin-bottom: 1rem;
+   font-size: 1.6rem;
+   font-weight: 600;
+}
+section.about h1 span{
+   color: #4CAF50;
+}
+section.about h3{
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   font-weight: 600;
+}
+section.about p{
+   font-family: 'Lato', sans-serif;
+   color: #000;
+   line-height: 1.9rem;
+   margin-bottom: 2rem;
+}
+section.about .socials{
+   display: flex;
+}
+section.about .socials a{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 35px;
+   margin-right: 0.8rem;
+   border-radius: 50%;
+}
+                 
+section.services {
+   background: #000;
+}
+.services-head{
+   color: rgb(10, 9, 9);
+   text-align: center;
+   margin-bottom: 1rem;
+   line-height: 0.5rem;
+   color: #4CAF50;
+}
+.services-head + p{
+   color: var(--white);
+   font-family: 'Lato', sans-serif;
+   margin-bottom: 1rem;
+   text-align: center;
+   margin-bottom: 6rem;
+   font-weight: 400;
+}
+.card img{
+   width: 50px;
+   background:whitesmoke;
+}
+section.services .card-grid{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   column-gap: 2rem;
+}
+section.services .card-grid .card{
+   background: whitesmoke;
+   padding: 3rem 2rem;
+   position: relative;
+   text-align: center;
+   transition: all .2s ease;
+}
+     
+section.services .card-grid .card h2{
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: 0.5rem;
+}
+section.services .card-grid .card p{
+   font-family: 'Lato', sans-serif;
+   color: var(--seconday);
+   line-height: 1.6;
+}
+section.services .card-grid .card:hover{
+   background: #4CAF50;
+}
+section.services .card-grid .card:hover h2{
+   color: whitesmoke;
+}
+section.services .card-grid .card:hover p{
+   color: whitesmoke;
+}                
+                
+section.project{
+   background: rgb(17, 17, 17)
+}
+.project-head{
+   color:  #fff;
+   text-align: center;
+   margin-bottom: 1rem;
+   line-height: 0.5rem;
+   color:#4CAF50;
+}
+.project-head + p{
+   color: #fff;
+   font-family: 'Lato', sans-serif;
+   margin-bottom: 1rem;
+   text-align: center;
+   margin-bottom: 6rem;
+   font-weight: 400;
+}
+.card img{
+   width: 50px;
+   background:whitesmoke;
+}
+section.project .card-grid{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   column-gap: 2rem;
+}
+section.project .card-grid .card{
+   background: whitesmoke;
+   padding: 3rem 2rem;
+   position: relative;
+   text-align: center;
+   transition: all .2s ease;
+}
+section.project .card-grid .card img{
+   position: absolute;
+   top: -1.5rem;
+   left: 50%;
+   transform: translateX(-50%);
+   color: var();
+}
+section.project .card-grid .card h2{
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: 0.5rem;
+}
+section.project .card-grid .card p{
+   font-family: 'Lato', sans-serif;
+   color: #fff;
+   line-height: 1.6;
+}
+section.project .card-grid .card:hover{
+   background: #4CAF50;
+}
+section.project .card-grid .card:hover h2{
+   color: #fff;
+}
+section.project .card-grid .card:hover p{
+   color: #fff;
+}
+
+.hobbies-container {
+   padding: 70px;
+   margin: 5px;
+   background:#000;        
+}
+.hobbies-container h6 {
+   color: #fff; 
+   font-size: 30px;
+   margin-right: 15px; 
+   padding-bottom: 5px;       
+}
+.hobbies-container {
+   display: flex;
+   color: #ffffff;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.hobbies-container ul li {
+   border: 1px solid #5C5F5E;
+   border-radius: 2px;
+   display: inline-block;
+   margin: 0 7px 7px 0;
+   padding: 7px;
+   font-size: 0.7em;
+   color: #4CAF50;
+}
+        
+
+footer {
+   text-align: center;
+   background-color: rgb(17, 17, 17);
+   color: #fff;
+   padding: 1em;
+   position: inherit;
+   width: 100%;
+   bottom: 0;
+}
+      
+footer>p {
+   margin-top: 5.5%;
+   color: #5C5F5E;
+}    
